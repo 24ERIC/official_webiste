@@ -30,7 +30,6 @@ function App() {
 							Job Search in 2022
 						</h1>
 						<p class="text-small">
-							  job requires
 							proper techniques for showcasing your
 							potential to the employer. But with
 							the advent of COVID-19, it has become
