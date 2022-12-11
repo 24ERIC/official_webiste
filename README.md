@@ -1,11 +1,6 @@
-# official_webiste
+# Development Guidance for UTM021 IT Development Team
 
-python manage.py runserver
-
-
-### Components of Software Engineering
-
-• Requirements analysis
+### 1 - Design - CRC Model (Class-Responsibility-Collaborator)
 
 • Design
 
@@ -16,6 +11,14 @@ python manage.py runserver
 • Validation
 
 • Maintenance
+
+
+
+python manage.py runserver
+
+
+
+
 
 
 
