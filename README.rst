@@ -48,6 +48,23 @@ Run in Local
 
 
 
+----------------------
+Development Plan
+----------------------
+Plan is in Github "Project" option.
+
+
+
+----------------------
+Ask for necessary prvilege from IT Administrator.
+----------------------
+Prvilege includes:
+
+• Access to Github Repository
+• Access to Github Development Plan "Projects"
+
+
+
 ===================
 Deployment
 ===================
@@ -157,11 +174,3 @@ Are we building the right product? Is our Customer satisfied?
 • Ask Ourself.
 
 
-
-
-
-
-
-
-.. image:: images/.png
-   :width: 600
