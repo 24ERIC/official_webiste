@@ -1,13 +1,3 @@
-..
-   - Format for README.rst:
-      1. Three Empty Lines between (sub)sections and (sub)sections. (Clear to view and edit)
-      2. Zero Empty Lines between (subsections) and content right below it.
-
-
-
-
-
-
 """""""""""""""""
 Development Guidance
 """""""""""""""""
@@ -71,6 +61,52 @@ Deployment
 We deploy the website on https://vercel.com for free.
 
 NOTE: Please be aware that many settings in project are mandatory to deploy website on vercel successfully!
+
+
+
+===================
+Principles and Rule
+===================
+These are Principles and rules developer need to follow when making any change.
+
+
+
+----------------------
+Editing Rule for README.rst
+----------------------
+1. Three Empty Lines between (sub)sections and (sub)sections. (Clear to view and edit)
+2. Zero Empty Lines between (subsections) and content right below it.
+
+
+
+----------------------
+Branch naming rule
+----------------------
+Reference: https://codingsight.com/git-branching-naming-convention-best-practices/
+
+Format: Branch type - version number ] feature name
+
+EX: Dev-1.2]Readme
+
+• 3 main types of branchs we use:
+
+   • Master (Master)
+      • Detail: The default branch available in the Git repository. It should be stable all the time and won’t allow any direct check-in. You can only merge it after code review. All team members are responsible for keeping the master stable and up-to-date.
+
+   • Dev (Development)
+      • Detail: The main development branch. The dev branch’s idea is to make changes in it and restrict the developers from making any changes in the master branch directly. Changes in the dev branch undergo reviews and, after testing, get merged with the master branch.
+
+   • QA (QA)
+      • Detail: QA or test branch, contains all the code for QA testing and automation testing of all changes implemented. Before any change goes to the production environment, it must undergo the QA testing to get a stable codebase.
+
+
+• Several Temporary Git Branches:
+
+   • Bug - (Bug Fix)
+   • Hot Fix
+   • Feature Branches
+   • Experimental Branches
+   • WIP branches
 
 
 
