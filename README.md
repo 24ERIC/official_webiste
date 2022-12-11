@@ -6,10 +6,15 @@ python manage.py runserver
 ### Components of Software Engineering
 
 • Requirements analysis
+
 • Design
+
 • Development
+
 • Testing
+
 • Validation
+
 • Maintenance
 
 
