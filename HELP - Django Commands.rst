@@ -15,6 +15,7 @@ UTM021 IT Development Team
 Resource / Reference
 ===================
 Django Official Docs Website: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+Vercel CLI Commands: https://vercel.com/docs/cli
 
 
 
@@ -81,8 +82,22 @@ Edit - mysite/urls.py
 
 
 
-
-
+----------------------
+Key - Keyword
+----------------------
+.. code:: python
+   
+	path()	# route, view, kwargs, name
+				# EX - route - path('polls/', ....),
+				# EX - view - path(.... , include('polls.urls')),
+				# EX - kwargs - ?
+				# EX - name - ?
+				
+	include()		# allows referencing other URLconfs
+						# should always use it !
+						# EX - path(.... , include('polls.urls')),
+	
+	
 
 
 
