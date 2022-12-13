@@ -39,7 +39,7 @@ After following the instruction below, the easy "polls" app finish and can be te
 
 .. code:: sh
 
-  $ python manage.py startapp polls    # Create an app --- "polls"
+  $ python3 manage.py startapp polls    # Create an app --- "polls"
   
   
   
@@ -49,8 +49,8 @@ Edit - polls/views.py
 .. code:: python
 
   from django.http import HttpResponse
-   def index(request):
-       return HttpResponse("Hello, world. You're at the polls index.")
+  def index(request):
+      return HttpResponse("Hello, world. You're at the polls index.")
   
 
 ----------------------
