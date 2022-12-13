@@ -210,3 +210,66 @@ Are we building the right product? Is our Customer satisfied?
 • Ask Ourself.
 
 
+
+
+===================
+Semantic Versioning - Rule for Version Number 
+===================
+Reference: 
+
+https://stackoverflow.com/questions/37814286/how-to-manage-the-version-number-in-git
+
+https://semver.org/
+
+Semantic versioning follows the pattern of X.Y.Z
+
+Or more readable would be [major].[minor].[patch]-[build/beta/rc]
+
+E.g. 1.2.0-beta
+
+major or X can be incremented if there are major changes in software, like backward-incompatible API release.
+
+minor or Y is incremented if backward compatible APIs are introduced.
+
+patch or Z is incremented after a bug fix.
+
+
+
+
+
+..
+   Note: Please follow the following templates
+
+===================
+Template 1 - Section
+===================
+.. code:: sh
+   
+  $ 
+  $ 
+  $ 
+  $ 
+   
+  
+  
+  
+----------------------
+Template 2 - SubSection
+----------------------
+.. code:: sh
+
+  $ 
+  $ 
+  $ 
+  $ 
+
+
+
+Template 3 - SubSubSection
+--------------------------
+.. code:: sh
+
+  $ 
+  $ 
+  $ 
+  $ 
