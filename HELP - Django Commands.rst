@@ -39,7 +39,7 @@ After following the instruction below, the easy "polls" app finish and can be te
 
 .. code:: sh
 
-  $ python manage.py startapp polls    # Create an app --- "polls"
+  $ python3 manage.py startapp polls    # Create an app --- "polls"
   
   
   
