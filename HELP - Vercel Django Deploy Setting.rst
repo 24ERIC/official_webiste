@@ -64,14 +64,41 @@ Add - /folder/App/wsgi.py
 
 
 
+----------------------
+Add - /folder/settings.py
+----------------------
+.. code:: python
+   
+   ... 
+   ALLOWED_HOSTS = ['.vercel.app']     # Add '.vercel.app'
+   
+   ...
+   INSTALLED_APPS = [
+    ...
+    'New Page',       # Add New Page here
+   ]
+   
+   ...
+   DATABASES = {}    # ??? - Vercel may only allow certain database
+   
+
+
 ===================
 Every time add new Page
 ===================
+Modify App urls, and New Pages urls (for path) and views (for website content)
+   
+
+
+----------------------
+Modify - /folder/New Page/
+----------------------
+.. code:: python
 
 
 
 ----------------------
-Modify - /folder/App/urls.py
+Add - /folder/App/urls.py
 ----------------------
 .. code:: python
 
@@ -82,13 +109,48 @@ Modify - /folder/App/urls.py
     path('admin/', admin.site.urls),
     path('', include('New Page.urls')),  # Add this page to App url path
    ]
-   
+
 
 
 ----------------------
-Modify - /folder/New Page/
+Create, Add - /folder/New Page/urls.py
 ----------------------
 .. code:: python
+
+   from django.urls import path
+   from example.views import index
+
+   urlpatterns = [
+       path('', index),  # New Page path
+   ]
+
+
+
+----------------------
+Create, Add - /folder/New Page/views.py
+----------------------
+.. code:: python
+
+   from datetime import datetime
+   from django.http import HttpResponse
+
+   def index(request):        # the page, conponent want to display on website
+       now = datetime.now()
+       html = f'''
+       <html>
+           <body>
+               <h1>Hello from Vercel!</h1>
+               <p>The current time is { now }.</p>
+           </body>
+       </html>
+       '''
+       return HttpResponse(html)
+       
+       
+       
+       
+       
+
 
 
 
