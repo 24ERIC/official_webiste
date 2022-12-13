@@ -16,6 +16,7 @@ Resource / Reference
 ===================
 Django Official Docs Website: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 Vercel CLI Commands: https://vercel.com/docs/cli
+Deploy Django Website in Vercel tutorial: https://jay-hale.medium.com/django-on-vercel-in-30-minutes-e69eed15b616
 
 
 
