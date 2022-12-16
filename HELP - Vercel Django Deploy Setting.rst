@@ -14,7 +14,6 @@ UTM021 IT Development Team
 ===================
 Resource / Reference
 ===================
-Bug - Sucess Deploy Django on Vercel, but website show 404: https://github.com/vercel/vercel/issues/7678
 
 
 
