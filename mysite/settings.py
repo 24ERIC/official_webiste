@@ -77,8 +77,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'test',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://eric:eric@cluster0.1t3ruht.mongodb.net/?ssl=true&ssl_cert_reqs=CERT_NONE'
+            }  
+        }
+}
 
-DATABASES = {}
 
 
 # Password validation
