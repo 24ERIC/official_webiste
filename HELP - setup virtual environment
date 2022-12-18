@@ -78,3 +78,13 @@ temp note
     ]
 }
 
+express api
+https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
+
+
+maybe solution
+https://medium.com/geekculture/deploy-express-project-with-multiple-routes-to-vercel-as-multiple-serverless-functions-567c6ea9eb36
+
+
+explanation about 
+https://vercel.com/docs/project-configuration#legacy/routes
