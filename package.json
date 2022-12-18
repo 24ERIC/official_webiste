@@ -1,0 +1,23 @@
+{
+  "name": "official_webiste",
+  "version": "1.0.0",
+  "description": "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" Development Guidance \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/24ERIC/official_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/24ERIC/official_website/issues"
+  },
+  "homepage": "https://github.com/24ERIC/official_website#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

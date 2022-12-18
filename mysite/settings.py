@@ -81,7 +81,7 @@ DATABASES = {
         'default': {
             'ENGINE': 'djongo',
             'NAME': 'test',
-            'ENFORCE_SCHEMA': False,
+            'ENFORCE_SCHEMA': True,
             'CLIENT': {
                 'host': 'mongodb+srv://eric:eric@cluster0.1t3ruht.mongodb.net/?ssl=true&ssl_cert_reqs=CERT_NONE'
             }  
