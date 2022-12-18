@@ -21,3 +21,41 @@ pip install djongo
 # solution！！！！！！ for setup problems
 https://stackoverflow.com/questions/31030307/why-is-pymongo-3-giving-serverselectiontimeouterror/58316119#58316119
 >>>  ?ssl=true&ssl_cert_reqs=CERT_NONE
+
+
+
+
+
+!!!!
+
+another problem , vercel serverless function error when deploying
+
+# solution
+npm init -y
+
+npm i express
+
+touch index.js
+
+
+# ----------------------------add following code inside index.js -------------
+// Add Express
+const express = require("express");
+
+// Initialize Express
+const app = express();
+
+// Create GET request
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
+// Initialize server
+app.listen(5000, () => {
+  console.log("Running on port 5000.");
+});
+
+// Export the Express API
+module.exports = app_;
+
+# end -------------------------------------------
