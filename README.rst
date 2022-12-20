@@ -49,10 +49,14 @@ Eric Strongly suggest you to have a look at this file before starting contribute
 
    deactivate # deavtivate virtualenv
    
+   # comment everything inside databse in /github/official_website/mysite/settings.py   database = {  #everything commment out#  }, reason: you need to have your own vercel.com and mongodb.com free version account
+   
    
    
    
    # Note the following steps is Optional, but helpful for testing
+   
+      # create free version account in mangodb.com, create your own database, modify everything inside database in /github/official_website/mysite/settings.py  ,  database = {  #modify me#  }
    
       # Reason: your modification may works well in local, but may crash once deploy on vercel, so you can create free account, test it by yourself
       # Download Vercel CLI follow guidance: https://vercel.com/docs/cli
@@ -61,6 +65,8 @@ Eric Strongly suggest you to have a look at this file before starting contribute
       # in order to test
       vercel      # preview "fake" deploy
       # copy the website link provided to you, paste it on browser
+      
+      
       
       
       # Reason: test your modification local by following command:
