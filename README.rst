@@ -25,7 +25,13 @@ Eric Strongly suggest you to have a look at this file before starting contribute
 
 .. code:: python
    
-   a
+   cd github      # assume you have a directory called "github", which place all the github project
+   
+   git clone https://github.com/24ERIC/official_website.git       # clone official_website to local
+   
+   # Eric suggest you to have vscode and github desktop, which will be very helpful
+   
+   
 
 
 
@@ -348,4 +354,6 @@ MangoDB Official Website: https://www.mongodb.com
 
 
 
-
+Future Planning
+===================
+3D engine: https://codeboje.de/2d-and-3d-game-and-rendering-engines-python/
