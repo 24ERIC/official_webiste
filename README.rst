@@ -23,19 +23,19 @@ SetUp
 ===================
 Eric Strongly suggest you to have a look at this file before starting contribute to the project :) it may saves you tons of times !
 
-
-
-Technical Details
-===================
 .. code:: python
    
    a
 
 
 
+Technical Details
+===================
+
+
 
 ----------------------
-DJango
+Django
 ----------------------
 Django is a web framework done by Python.
 
@@ -58,8 +58,6 @@ Every app has an urls.py, the root one is official_website/mysite/urls.py. Djang
 Django frequently used Command
 --------------------------
 .. code:: python
-
-   
 
   django-admin startproject official_website    # create a django proeject called official_website
   
@@ -323,10 +321,14 @@ Common Problem during SetUp (Eric's Experience)
 
    Problem 1 - djongo is not one of four engine supported by django
    Solution - pip install pytz
-
    
-
-
+   Problem 2 - deploy vercel, get message: serverless function crash
+   Solution - double check the correction in files: vercel.json, requirements.txt, build_files.sh mysite/urls.py mysite/settings.py
+   
+   Problem 3 - deploy vercel, get message: not found
+   Solution - double check the correction in vercel.json
+   
+   # Note: if you encounter any issues during setup, and you can not find solution by copy-paste error message on website, come to ask Eric ;)
 
 
 
@@ -342,44 +344,8 @@ Vercel Official DOCS: https://vercel.com/docs
 
 Deploy Django Website in Vercel tutorial: https://jay-hale.medium.com/django-on-vercel-in-30-minutes-e69eed15b616
 
+MangoDB Official Website: https://www.mongodb.com
 
 
 
 
-
-
-
-
-   
-Template 1 - Section
-===================
-.. code:: sh
-   
-  $ 
-  $ 
-  $ 
-  $ 
-   
-  
-  
-  
-----------------------
-Template 2 - SubSection
-----------------------
-.. code:: sh
-
-  $ 
-  $ 
-  $ 
-  $ 
-
-
-
-Template 3 - SubSubSection
---------------------------
-.. code:: sh
-
-  $ 
-  $ 
-  $ 
-  $ 
