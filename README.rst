@@ -25,7 +25,13 @@ Eric Strongly suggest you to have a look at this file before starting contribute
 
 .. code:: python
 
-   # Eric suggest VScode and Github Desktop
+   # install python3 by following: https://www.freecodecamp.org/news/python-version-on-mac-update/
+   
+   # install pip by following: https://phoenixnap.com/kb/install-pip-mac
+   
+   # install git by following: https://phoenixnap.com/kb/install-git-on-mac
+
+   # Eric suggest VScode and Github Desktop, by following: https://code.visualstudio.com/docs/setup/mac   and   https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop
    
    cd github      # assume you have a directory called "github", which place all the github project
    
@@ -46,12 +52,19 @@ Eric Strongly suggest you to have a look at this file before starting contribute
    
    
    
-   # Note following is Optional, but helpful for testing
+   # Note the following steps is Optional, but helpful for testing
    
       # Reason: your modification may works well in local, but may crash once deploy on vercel, so you can create free account, test it by yourself
       # Download Vercel CLI follow guidance: https://vercel.com/docs/cli
       # create account on vercel
       vercel login
+      # in order to test
+      vercel      # preview "fake" deploy
+      # copy the website link provided to you, paste it on browser
+      
+      
+      # Reason: test your modification local by following command:
+      python3 manage.py runserver         # make sure you are in /github/official_website/ directory
    
    
    
