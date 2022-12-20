@@ -392,6 +392,48 @@ MangoDB Official Website: https://www.mongodb.com
 
 
 
+
+Contribution Guidance
+===================
+In order to make the project easy maintain and extend in future. It is necessary to follow some common contribution guidance. 
+
+
+
+----------------------
+Comment and Documentation
+----------------------
+Whenever you made modification, cooment all of the necessary code in order for others and future teammates (including yourself) to easily and quickly undertstand what you did and your thought without looking at the code.
+
+Once we publish new version of the website, update README.rst is necessary as well.
+
+
+
+
+----------------------
+Github and Git
+----------------------
+In order to contribute, first designa a plan or talk about the feature you want to work on with Eric, and then make a Dev branch based on main.
+
+Once you finished your feature, make a pull request, and then other teammates will review your code, double check and test it before pushing into main branch.
+
+As we know git is an version tracking package, whenever you commit your change to your branch, leave a clear but short comment will be very helpful.
+
+We will always keep several stable version of website, just in case the new version crashed.
+
+
+
+----------------------
+Principles during Design and Development
+----------------------
+During the logic design process, using UML graph.
+
+Tool for UML: https://app.diagrams.net/
+
+During the development related to logic stuff, please following SOLID Principle, more details following: https://medium.com/mindorks/solid-principles-explained-with-examples-79d1ce114ace     or       https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/
+
+
+
+
 Future Planning
 ===================
 3D engine: https://codeboje.de/2d-and-3d-game-and-rendering-engines-python/
