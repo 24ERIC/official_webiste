@@ -188,8 +188,10 @@ This folder structure is basic one, future web pages will be expanded based on t
    
 
 ----------------------
-Eric's Journal: Walkthrough from Beginning to Finish SetUp
+Eric's Journey: Walkthrough from Beginning to Finish SetUp
 ----------------------
+！！！Note: The following steps is only edcational and testing purpose, it is not used for setup.
+
 .. code:: python
 
    pip install virtualenvwrapper    # download virtual environment package for python
