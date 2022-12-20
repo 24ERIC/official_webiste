@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-*do6r*h3f76$p(x%kgvrx!z&c^27dn@ow%#kpu_ga#7)9avrs*
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1',  'ut021.com']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1',  'ut021.com', 'test-24eric.vercel.app']
 
 
 
@@ -88,6 +88,9 @@ DATABASES = {
     }
 }
 
+import os
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 # Password validation
