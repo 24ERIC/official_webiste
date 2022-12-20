@@ -65,6 +65,7 @@ Eric Strongly suggest you to have a look at this file before starting contribute
       
       # Reason: test your modification local by following command:
       python3 manage.py runserver         # make sure you are in /github/official_website/ directory
+      # default local ip address is: http://127.0.0.1:8000/
    
    
    
