@@ -7,7 +7,7 @@ Development Guidance
 ...........
 UTM021 IT Development Team
 ...........
-.. contents:: Overview
+.. contents:: Note: The following Guidance is designed for Macbook or Linux. Eric don't familiar with Windows but can help you!
    :depth: 3
    
 
@@ -18,21 +18,40 @@ This project is aimed for developing and maintaining the Official Website for UT
 
 
 
-
 Quick SetUp
 ===================
 Eric Strongly suggest you to have a look at this file before starting contribute to the project :) it may saves you tons of times !
 
+
 .. code:: python
 
-   # Eric suggest you to have vscode and github desktop, which will be very helpful
-   
-   # Download Vercel CLI (Command line interface): https://vercel.com/docs/cli
+   # Eric suggest VScode and Github Desktop
    
    cd github      # assume you have a directory called "github", which place all the github project
    
    git clone https://github.com/24ERIC/official_website.git       # clone official_website to local
    
+   cd official_website
+   
+   pip install virtualenvwrapper    # download virtual environment package for python
+   
+   virtualenv official_website_virtual_environ        # create virtual environment for official website
+
+   source official_website_virtual_environ/bin/activate     # activate it
+   
+   pip install django djongo pymongo pytz       # install all the packages we need
+
+   deactivate # deavtivate virtualenv
+   
+   
+   
+   
+   # Note following is Optional, but helpful for testing
+   
+      # Reason: your modification may works well in local, but may crash once deploy on vercel, so you can create free account, test it by yourself
+      # Download Vercel CLI follow guidance: https://vercel.com/docs/cli
+      # create account on vercel
+      vercel login
    
    
    
@@ -87,6 +106,8 @@ Django frequently used Command
 Vercel
 ----------------------
 Vercel is cloud website hosting service. It is only free cloud service Mr. Eric can find, and we can use its free service.
+
+Modification made on ut021.com will happen only by changing main branch.
 
 
 
@@ -167,7 +188,7 @@ Eric's Journal: Walkthrough from Beginning to Finish SetUp
 
    deactivate # deavtivate virtualenv
 
-   cd <folder path>/github    # go to the directory where project will locate
+   cd github    # go to the directory where project will locate
     
    django-admin startproject official_website     # create project
 
