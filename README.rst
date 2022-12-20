@@ -19,8 +19,18 @@ This project is aimed for developing and maintaining the Official Website for UT
 
 
 
+SetUp
+===================
+Eric Strongly suggest you to have a look at this file before starting contribute to the project :) it may saves you tons of times !
+
+
+
 Technical Details
 ===================
+.. code:: python
+   
+   a
+
 
 
 
@@ -49,6 +59,8 @@ Django frequently used Command
 --------------------------
 .. code:: python
 
+   
+
   django-admin startproject official_website    # create a django proeject called official_website
   
   python3 manage.py startapp home   # create an app (official_website/home) inside the project
@@ -67,6 +79,7 @@ Django frequently used Command
 Vercel
 ----------------------
 Vercel is cloud website hosting service. It is only free cloud service Mr. Eric can find, and we can use its free service.
+
 
 
 
@@ -90,6 +103,7 @@ MangoDB is a Database. It is one of the DB(DataBase) which can integrate with bo
 Project Folder Structure and Explaination
 ----------------------
 This folder structure is basic one, future web pages will be expanded based on this basic structure.
+
 
 .. code:: python
    
@@ -130,22 +144,203 @@ This folder structure is basic one, future web pages will be expanded based on t
    
    
 
+----------------------
+Eric's Journal: Walkthrough from Beginning to Finish SetUp
+----------------------
+.. code:: python
+
+   pip install virtualenvwrapper    # download virtual environment package for python
+   
+   virtualenv official_website_virtual_environ        # create virtual environment for official website
+
+   source official_website_virtual_environ/bin/activate     # activate it
+   
+   pip install django djongo pymongo pytz       # install all the packages we need
+
+   deactivate # deavtivate virtualenv
+
+   cd <folder path>/github    # go to the directory where project will locate
+    
+   django-admin startproject official_website     # create project
+
+   python3 manage.py startapp home  # create home page
+   
+   mkdir subpages static home/static home/templates home/subpages      # create all the folders we need
+   
+   touch build_files.sh requirements.txt vercel.json home/urls.py home/templates/home.html subpages/__init__.py .gitignore  # create all the files we need
+   
+   cd subpages
+   
+   python3 manage.py startapp about contact
+   
+   cd ..
+   
+   
+   # Replace - /official_website/home/urls.py
+   from django.urls import path
+   from home.views import index
+   urlpatterns = [
+       path('', index),  # New Page path
+   ]
+   
+   
+   # Replace - /official_website/home/views.py
+   from django.http import HttpResponse
+   def index(request):
+       return HttpResponse("Hello, world. You're at the polls index.")
+       
+       
+   # Add and Modify - /official_website/mysite/settings.py
+   DEBUG = False
+   ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1',  'ut021.com', 'test-24eric.vercel.app']
+   INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'home',
+    'subpages.about',
+    'subpages.contact',
+   ]
+   DATABASES = {
+       'default': {
+           'ENGINE': 'djongo',
+           'NAME': 'utm021',
+           'ENFORCE_SCHEMA': False,
+           'CLIENT': {
+               'host': 'mongodb+srv://eric:eric@cluster0.1t3ruht.mongodb.net/?ssl=true&ssl_cert_reqs=CERT_NONE'
+           }  
+       }
+   }
+   import os
+   STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+   STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+   
+   # Replace - /official_website/mysite/urls.py
+   from django.contrib import admin
+   from django.urls import path, include
+   urlpatterns = [
+       path('admin/', admin.site.urls),
+       path('', include('home.urls')),
+       path('about/', include('subpages.about.urls')),
+       path('contact/', include('subpages.contact.urls'))
+   ]
+   from django.conf import settings
+   from django.conf.urls.static import static
+   urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+   urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+   
+   
+   # Add - /official_website/mysite/wsgi.py
+   app = application
+
+   
+   # Modify - official_website/subpages/about
+   simialr to what Eric did in home
+   
+   
+   # Modify - official_website/subpages/contact
+   simialr to what Eric did in home
+   
+   
+   # Replace - official_website/.gitignore - (Note: .gitignore may auto generate)
+   /node_modules
+   /.pnp
+   .pnp.js
+   # testing
+   /coverage
+   # production
+   /build
+   # misc
+   .DS_Store
+   .env.local
+   .env.development.local
+   .env.test.local
+   .env.production.local
+   npm-debug.log*
+   yarn-debug.log*
+   yarn-error.log*
+   .vercel
+   
+   
+   # Replace - official_website/build_files.sh
+   pip install -r requirements.txt
+   # python3.9 manage.py collectstatic    # Note: this command let vercel run for a very long time, may not need
+   
+   # Replace - official_website/requirements.txt
+   pymongo==3.12.3
+   Django==4.1.4
+   djongo==1.3.6
+   pytz==2022.7
+
+
+   # create file official_website/vercel.json
+   {
+     "version": 2,
+     "builds": [
+       {
+         "src": "mysite/wsgi.py",
+         "use": "@vercel/python",
+         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+       },
+       {
+         "src": "build_files.sh",
+         "use": "@vercel/static-build",
+         "config": {
+           "distDir": "staticfiles_build"
+         }
+       }
+     ],
+     "routes": [
+       {
+         "src": "/static/(.*)",
+         "dest": "/static/$1"
+       },
+       {
+         "src": "/(.*)",
+         "dest": "mysite/wsgi.py"
+       }
+     ]
+   }
+   
+   
+   python3 manage.py runserver      # Optional, it is used for testing in local
+
+   python3 manage.py makemigrations    # do it only first time
+
+   python3 manage.py migrate      # do it only first time
+
+   python3 manage.py collectstatic     # may not need to do it
+
+
+
+Common Problem during SetUp (Eric's Experience)
+===================
+.. code:: python
+
+   Problem 1 - djongo is not one of four engine supported by django
+   Solution - pip install pytz
+
+   
 
 
 
 
 
+Resource / Reference
+===================
+Django Official Website: https://www.djangoproject.com/
 
+Django Official DOCS: https://docs.djangoproject.com/en/4.1/
 
+Vercel Official Website: https://vercel.com/
 
+Vercel Official DOCS: https://vercel.com/docs
 
-
-
-
-
-
-
-
+Deploy Django Website in Vercel tutorial: https://jay-hale.medium.com/django-on-vercel-in-30-minutes-e69eed15b616
 
 
 
