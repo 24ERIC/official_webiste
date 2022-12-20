@@ -19,17 +19,21 @@ This project is aimed for developing and maintaining the Official Website for UT
 
 
 
-SetUp
+Quick SetUp
 ===================
 Eric Strongly suggest you to have a look at this file before starting contribute to the project :) it may saves you tons of times !
 
 .. code:: python
+
+   # Eric suggest you to have vscode and github desktop, which will be very helpful
+   
+   # Download Vercel CLI (Command line interface): https://vercel.com/docs/cli
    
    cd github      # assume you have a directory called "github", which place all the github project
    
    git clone https://github.com/24ERIC/official_website.git       # clone official_website to local
    
-   # Eric suggest you to have vscode and github desktop, which will be very helpful
+   
    
    
 
