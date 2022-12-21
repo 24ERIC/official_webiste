@@ -451,5 +451,7 @@ Future Planning
 
 Licence
 ===================
+ `CoolProp project <http://coolprop.sourceforge.net>`_
+
 Copyright © 2022, [IT Development Team in UT021](https://github.com/24ERIC/official_website/).
 Released under the [MIT License](LICENSE).
