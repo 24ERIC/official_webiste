@@ -1,12 +1,16 @@
 .. raw:: html
     <embed>
         
-        <img src="https://github.com/24ERIC/official_website/blob/main/home/static/CEG-Logo-Splitted-Colored.svg" width="3000" height="200" align="center">
+        <img src="https://github.com/24ERIC/official_website/blob/main/static/LOGO%2B%E5%AD%97%202022%20%E9%80%8F%E6%98%8E%E5%BA%95.png">
         <br>
     </embed>
+    
+    
+    
 """""""""""""""""
-Development Guidance # update-copyright [![NPM version](https://img.shields.io/npm/v/update-copyright.svg?style=flat)](https://www.npmjs.com/package/update-copyright) [![NPM monthly downloads](https://img.shields.io/npm/dm/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![NPM total downloads](https://img.shields.io/npm/dt/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/update-copyright.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/update-copyright)
+Development Guidance
 """""""""""""""""
+
 
 
 
@@ -22,6 +26,9 @@ Introduction
 ===================
 This project is aimed for developing and maintaining the Official Website for UT021 in University of Toronto by IT Development Team (Logistics Department in UT021). Website uses Python Django (Basic Framework), integrate with MangoDB (Database), and deploys on Vercel (Cloud Server). THe website contains two main part: one part is the display of UT021 details, second part is the development backyard.
 
+
+.. |Generic badge| image:: https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg
+   :target:
 
 
 Quick SetUp
