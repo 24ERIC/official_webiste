@@ -7,7 +7,7 @@
     
     
     
-|a| |b| |c| |d| |e|
+|a| |b| |c| |d| |e| |f|
 
 .. |a| image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A  
 
@@ -17,7 +17,9 @@
 
 .. |d| image:: https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg
 
-.. |e| image:: https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge
+.. |e| image:: https://img.shields.io/badge/DOI-10.1038%2Fs41592--019--0686--2-blue
+
+.. |f| image:: https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge
     
     
    
