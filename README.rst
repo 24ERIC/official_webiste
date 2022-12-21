@@ -7,11 +7,23 @@
     
     
     
+|a| |b| |c| |d| |e|
+
+.. |a| image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A  
+
+.. |b| image:: https://img.shields.io/pypi/dm/numpy.svg?label=PyPI%20downloads
+
+.. |c| image:: https://img.shields.io/conda/dn/conda-forge/numpy.svg?label=Conda%20downloads
+
+.. |d| image:: https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg
+
+.. |e| image:: https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge
+    
+    
+   
 """""""""""""""""
 Development Guidance
 """""""""""""""""
-
-
 
 
 ...........
