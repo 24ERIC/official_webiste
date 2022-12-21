@@ -1,9 +1,9 @@
 .. raw:: html
-
     <embed>
-        <img src="" width="300">
+        
+        <img src="https://github.com/24ERIC/official_website/blob/main/home/static/CEG-Logo-Splitted-Colored.svg" width="3000" height="200" align="center">
+        <br>
     </embed>
-
 """""""""""""""""
 Development Guidance # update-copyright [![NPM version](https://img.shields.io/npm/v/update-copyright.svg?style=flat)](https://www.npmjs.com/package/update-copyright) [![NPM monthly downloads](https://img.shields.io/npm/dm/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![NPM total downloads](https://img.shields.io/npm/dt/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/update-copyright.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/update-copyright)
 """""""""""""""""
