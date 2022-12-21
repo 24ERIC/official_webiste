@@ -1,3 +1,9 @@
+.. raw:: html
+
+    <embed>
+        <img src="" width="300">
+    </embed>
+
 """""""""""""""""
 Development Guidance # update-copyright [![NPM version](https://img.shields.io/npm/v/update-copyright.svg?style=flat)](https://www.npmjs.com/package/update-copyright) [![NPM monthly downloads](https://img.shields.io/npm/dm/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![NPM total downloads](https://img.shields.io/npm/dt/update-copyright.svg?style=flat)](https://npmjs.org/package/update-copyright) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/update-copyright.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/update-copyright)
 """""""""""""""""
@@ -451,7 +457,7 @@ Future Planning
 
 Licence
 ===================
- `CoolProp project <http://coolprop.sourceforge.net>`_
+ Copyright © 2022, `IT Development Team in UT021 <https://github.com/24ERIC/official_website/>`_ Released under the [MIT License](LICENSE).
 
-Copyright © 2022, [IT Development Team in UT021](https://github.com/24ERIC/official_website/).
-Released under the [MIT License](LICENSE).
+
+
