@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 
 
@@ -9,12 +8,17 @@
 
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTM021 Offcial Webiste</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>UT021</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta user-scalable="yes">
+        <style>
+            body {
+                background: #ececec;
+            }
+        </style>
     </head>
+    <body></body>
 </html>
 
 
@@ -23,7 +27,7 @@
 <!-- Test JS !!! ============================================================================================================== -->
 
 
-
+<!-- 
 
     <body>
         <div style="width: 40%;
@@ -54,153 +58,185 @@
         for(var x in data){
             dataNode.innerHTML+=x+' : '+data[x]+'<br><br>';
         }
-    </script>
+    </script> -->
+
+
+
+<!-- IBM Header by Eric !!! ======================================================================================================== -->
 
 
 
 
-<!-- IBM Header !!! ============================================================================================================ -->
+<style>
+    .header {
+        margin-top: 30px;
+        height: 60px;
+        background-color: #ffffff;
+        border: solid 2px #ececec;
+    }
+
+    .header a:link {
+        text-decoration: none;
+    }
+
+    .header a:hover {
+        text-decoration: none;
+        background-color: #ececec;
+    }
+
+    .header-left {
+        float: left;
+        font-size: 30px;
+        font-family: "Source Han Sans CN";
+        color: #000;
+        padding-left: 10px;
+        width: 100px;
+        padding: 12px 12px;
+    }
+
+    .header-divider {
+        float: left;
+        border-left: 2px solid #e0e0e0;
+        padding-left: 1px;
+        width: 0px;
+        margin-top: 15px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    .header-center {
+        float: left;
+        font-size: 30px;
+        font-family: "Lucida Console", "Courier New", monospace;
+        color: #000;
+        padding: 12px 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .header-right {
+        float: right;
+        font-size: 30px;
+        font-family: "Source Han Sans CN";
+        color: #000;
+        padding: 12px 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+</style>
+
+<nav class="header">
+    <a href="/" class="header-left">UT021</a>
+    <div class="header-divider"></div>
+    <a href="/events" class="header-center">Events</a>
+    <a href="/about" class="header-center">About</a>
+    <a href="/contact" class="header-center">Contact</a>
+
+    <a href="/" class="header-right">Login</a>
+    <a href="/" class="header-right">Search</a>
+</nav>
 
 
 
-<html>
-    <head>
-        <style>
-            #emptyHeader {
-                height: 25px;
-                background: #f2f2f2;
-            }
-            #menu {
-                background: #FFFFFF;
-                color: #FFF;
-                height: 65px;
-                padding-left: 18px;
-                border-radius: 10px;
-            }
-            #menu ul, #menu li {
-                margin: 0 auto;
-                padding: 0;
-                list-style: none
-            }
-            #menu ul {
-                width: 100%;
-            }
-            #menu li {
-                float: left;
-                display: inline;
-                position: relative;
-            }
-            #menu a {
-                display: block;
-                line-height: 65px;
-                padding: 0 14px;
-                text-decoration: none;
-                color: #000000;
-                font-size: 23px;
-            }
-            #menu a.dropdown-arrow:after {
-                content: "\25BE";
-                margin-left: 5px;
-            }
-            #menu li a:hover {
-                color: #000000;
-                background: #d9d9d9;
-            }
-            #menu input {
-                display: none;
-                margin: 0;
-                padding: 0;
-                height: 65px;
-                width: 100%;
-                opacity: 0;
-                cursor: pointer
-            }
-            #menu label {
-                display: none;
-                line-height: 65px;
-                text-align: center;
-                position: absolute;
-                left: 35px
-            }
-            #menu label:before {
-                font-size: 1.6em;
-                content: "\2261"; 
-                margin-left: 20px;
-            }
-            #menu ul.sub-menus{
-                height: auto;
-                overflow: hidden;
-                width: 170px;
-                background: #FFFFFF;
-                position: absolute;
-                z-index: 99;
-                display: none;
-            }
-            #menu ul.sub-menus li {
-                display: block;
-                width: 100%;
-            }
-            #menu ul.sub-menus a {
-                color: #000000;
-                font-size: 18px;
-            }
-            #menu li:hover ul.sub-menus {
-                display: block
-            }
-            #menu ul.sub-menus a:hover{
-                background: #C7C5C1;
-                color: #000000;
-            }
-            @media screen and (max-width: 800px){
-                #menu {position:relative}
-                #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-                #menu ul.sub-menus {width:100%;position:static;}
-                #menu ul.sub-menus a {padding-left:30px;}
-                #menu li {display:block;float:none;width:auto;}
-                #menu input, #menu label {position:absolute;top:0;left:0;display:block}
-                #menu input {z-index:4}
-                #menu input:checked + label {color:white}
-                #menu input:checked + label:before {content:"\00d7"}
-                #menu input:checked ~ ul {display:block}
-            }
 
-            .logo {
-            font-size: 25px;
-            font-family: "IBM Plex Sans", "ibm-plex-sans", "Helvetica Neue", "Arial", sans-serif;
-            color: #000;
-            text-decoration: none;
-            margin-left: 30px;
-            }
-        </style>
-    </head>
+<!-- Body (picture, big word) !!! ================================================================================================== -->
+
+
+<style>
+    .picture-filled-background {
+        border: 2px solid red;
+        height: 770px;
+    }
+
+    .picture-filled-background-left {
+        border: 2px solid rgb(30, 255, 0);
+        float: left;
+        height: 770px;
+        width: 616px;
+        margin-left: 20px;
+    }
+
+    .picture-filled-background-left-text-above {
+        border: 2px solid blue;
+        vertical-align: top;
+        width: 616px;
+        padding-top: 45px;
+        padding-bottom: 370px;
+        font-size: 62px;
+    }
+
+
+    .picture-filled-background-left-text-below {
+        border: 2px solid rgb(251, 0, 255);
+        vertical-align: top;
+        width: 420px;
+        height: 100px;
+        font-size: 28px;
+        margin-bottom: 40px;
+        font-family: "Times New Roman";
+    }
+
+    .picture-filled-background-left-link-button {
+        vertical-align: top;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 190px;
+        width: 300px;
+        height: 200px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #063e98;
+
+    }
+
+    .picture-filled-background-left-link-button .p{
+        width: 10px;
+        height: 200px;
+        float: left;
+    }
+    .picture-filled-background-left-link-button .img{
+        width: 10px;
+        height: 200px;
+        float: right;
+    }
+
+    .picture-filled-background-right {
+        border: 2px solid blue;
+        float: right;
+        height: 770px;
+        width: 704px;
+        margin-right: 20px;
+    }
+
+</style>
+
+<nav class="picture-filled-background"> 
+    <div class="picture-filled-background-left">
+        <div class="picture-filled-background-left-text-above">
+            Broaden your horizon
+        </div>
+
+        <div class="picture-filled-background-left-text-below">
+            Learn -- what and how -- you can do to practise your Entrepreneurial Leadership inside UT021
+        </div> 
+
+        <a href="/events" class="picture-filled-background-left-link-button">
+            <p>Learn More</p>
+            <img src=" {% include 'arrow-right-svgrepo-com.svg' %} " alt="My svg" /> 
+        </a>
+    </div>
+
+    <div class="picture-filled-background-right">
+        picture
+    </div>
     
-    <body>
-        <header id="emptyHeader">
-        </header>
-        <nav id="menu">
-            <input type="checkbox" id="responsive-menu"><label></label>
-            <ul>
-                <li><a href="" class="logo"> UTM021 </a></li>
-                <li><a class="dropdown-arrow" href="">Products</a>
-                <ul class="sub-menus">
-                    <li><a href="">Products 1</a></li>
-                    <li><a href="">Products 2</a></li>
-                    <li><a href="">Products 3</a></li>
-                    <li><a href="">Products 4</a></li>
-                    <li><a href="">p2</a></li>
-                    <li><a href="">p1</a></li>
-                </ul>
-                </li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-          </nav>
-    </body>
-</html>
+</nav>
 
 
 
 <!-- Body (picture, big word) !!! ============================================================================================================ -->
+
 
 
 
