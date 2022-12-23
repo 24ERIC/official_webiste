@@ -23,112 +23,7 @@
 
 
 
-
-<!-- Test JS !!! ============================================================================================================== -->
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-</style>
-</head>
-<body>
-
-<div class="top-container">
-  <h1>Scroll Down</h1>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
-<div class="header" id="myHeader">
-  <h2>My Header</h2>
-</div>
-
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-
-</body>
-</html>
-
-<!-- 
-
-    <body>
-        <div style="width: 40%;
-        border: 1px solid black;
-        background-color: lightcyan;
-        font-family: Helvetica, sans-serif;">
-            <div style="margin: 5%;">
-                <h1>
-                    <u>Dictionary Data</u>
-                </h1>
-                <h2>
-                    <u>All Data</u>
-                </h2>
-                <h4 id='alldata'></h4><br>
-                <h2>
-                    <u>Neat Data</u>
-                </h2>
-                <h4 id='neatdata'></h4>
-            </div>
-        </div>
-    </body>
-
-    <script>
-        var data = JSON.parse("{{data|escapejs}}");
-        var dataNode = document.getElementById('alldata');
-        dataNode.innerHTML+="{{data|escapejs}}";
-        dataNode = document.getElementById('neatdata');
-        for(var x in data){
-            dataNode.innerHTML+=x+' : '+data[x]+'<br><br>';
-        }
-    </script> -->
-
-
-
 <!-- IBM Header by Eric !!! ======================================================================================================== -->
-
 
 
 
@@ -198,7 +93,6 @@ function myFunction() {
     <a href="/contact" class="header-center">Contact</a>
 
     <a href="/" class="header-right">Login</a>
-    <a href="/" class="header-right">Search</a>
 </nav>
 
 
@@ -211,12 +105,12 @@ function myFunction() {
 
 <style>
     .picture-filled-background {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: 770px;
     }
 
     .picture-filled-background-left {
-        border: 2px solid rgb(30, 255, 0);
+        /* border: 2px solid rgb(30, 255, 0); */
         float: left;
         height: 770px;
         width: 616px;
@@ -224,7 +118,7 @@ function myFunction() {
     }
 
     .picture-filled-background-left-text-above {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         vertical-align: top;
         width: 616px;
         padding-top: 45px;
@@ -234,7 +128,7 @@ function myFunction() {
 
 
     .picture-filled-background-left-text-below {
-        border: 2px solid rgb(251, 0, 255);
+        /* border: 2px solid rgb(251, 0, 255); */
         vertical-align: top;
         width: 420px;
         height: 100px;
@@ -244,37 +138,45 @@ function myFunction() {
     }
 
     .picture-filled-background-left-link-button {
-        vertical-align: top;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-right: 190px;
-        width: 300px;
-        height: 200px;
+        /* border: 2px solid rgb(251, 0, 255); */
+        vertical-align: bottom;
+        width: 320px;
+        height: 80px;
         text-decoration: none;
-        color: #fff;
         background-color: #063e98;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
 
     }
 
-    .picture-filled-background-left-link-button .p{
-        width: 10px;
-        height: 200px;
-        float: left;
-    }
-    .picture-filled-background-left-link-button .img{
-        width: 10px;
-        height: 200px;
-        float: right;
+    .picture-filled-background-left-link-button p{
+        /* border: 2px solid rgb(19, 167, 172); */
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+        margin-left: 20%;
+        padding-top: 10px;
     }
 
     .picture-filled-background-right {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         float: right;
         height: 770px;
         width: 704px;
         margin-right: 20px;
     }
+
+    .picture-filled-background-right img{
+        /* border: 2px solid blue; */
+        width: 500px;
+        height: 500px;
+        margin-top: 110px;
+        margin-left: 100px;
+    }
+
 
 </style>
 
@@ -289,16 +191,139 @@ function myFunction() {
         </div> 
 
         <a href="/events" class="picture-filled-background-left-link-button">
-            <p>Learn More</p>
-            <img src=" {% include 'arrow-right-svgrepo-com.svg' %} " alt="My svg" /> 
+            <p>Learn More   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &#62; </p>
         </a>
     </div>
 
     <div class="picture-filled-background-right">
-        picture
+        {% load static %}
+        <img src="{% static 'utm021_logo_without_text_transparent.png' %}" >
     </div>
     
 </nav>
+
+
+
+
+<!-- Test JS !!! ============================================================================================================== -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div class="header" id="myHeader">
+  <h2>My Header</h2>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+var previousPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+window.onscroll = function() {
+  var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (previousPosition > currentPosition) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+
+  previousPosition = currentPosition;
+};
+</script>
+
+</body>
+</html> -->
+
+<!-- 
+
+    <body>
+        <div style="width: 40%;
+        border: 1px solid black;
+        background-color: lightcyan;
+        font-family: Helvetica, sans-serif;">
+            <div style="margin: 5%;">
+                <h1>
+                    <u>Dictionary Data</u>
+                </h1>
+                <h2>
+                    <u>All Data</u>
+                </h2>
+                <h4 id='alldata'></h4><br>
+                <h2>
+                    <u>Neat Data</u>
+                </h2>
+                <h4 id='neatdata'></h4>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var data = JSON.parse("{{data|escapejs}}");
+        var dataNode = document.getElementById('alldata');
+        dataNode.innerHTML+="{{data|escapejs}}";
+        dataNode = document.getElementById('neatdata');
+        for(var x in data){
+            dataNode.innerHTML+=x+' : '+data[x]+'<br><br>';
+        }
+    </script> -->
 
 
 
