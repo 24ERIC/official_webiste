@@ -408,6 +408,9 @@ Common Problem during SetUp (Eric's Experience)
    Problem 3 - deploy vercel, get message: not found
    Solution - double check the correction in vercel.json
    
+   Problem 4 - django.core.exceptions.ImproperlyConfigured: Cannot import 'products'. Check that 'subpages.products.apps.ProductsConfig.name' is correct.
+   Solution - If the app location is inside an subpage, for example app name is events, then change from name = 'events' to name = 'subpages.events'
+   
    # Note: if you encounter any issues during setup, and you can not find solution by copy-paste error message on website, come to ask Eric ;)
 
 
