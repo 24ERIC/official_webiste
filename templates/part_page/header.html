@@ -1,0 +1,76 @@
+{% load static %}
+<style>
+    .empty-header {
+        height: 30px;
+        background-color: #ececec;
+    }
+
+    .header {
+        background-image: url("/static/img/white-background.png");
+        height: 60px;
+        background-color: #ffffff;
+        border: solid 2px #ececec;
+    }
+
+    .header a:link {
+        text-decoration: none;
+    }
+
+    .header a:hover {
+        text-decoration: none;
+        background-color: #ececec;
+    }
+
+    .header-left {
+        float: left;
+        font-size: 30px;
+        font-family: "Source Han Sans CN";
+        color: #000;
+        padding-left: 10px;
+        width: 100px;
+        padding: 12px 12px;
+    }
+
+    .header-divider {
+        float: left;
+        border-left: 2px solid #e0e0e0;
+        padding-left: 1px;
+        width: 0px;
+        margin-top: 15px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    .header-center {
+        float: left;
+        font-size: 30px;
+        font-family: "Lucida Console", "Courier New", monospace;
+        color: #000;
+        padding: 12px 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .header-right {
+        float: right;
+        font-size: 30px;
+        font-family: "Source Han Sans CN";
+        color: #000;
+        padding: 12px 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+</style>
+
+<header class="empty-header">
+
+</header>
+<nav class="header">
+    <a href="/" class="header-left">UT021</a>
+    <div class="header-divider"></div>
+    <a href="/events/" class="header-center">Events</a>
+    <a href="/about/" class="header-center">About</a>
+    <a href="/contact/" class="header-center">Contact</a>
+
+    <a href="/accounts/login/" class="header-right">Login</a>
+</nav>

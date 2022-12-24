@@ -1,116 +1,10 @@
-<!DOCTYPE html>
-
-
-
-<!-- Page style !!! ============================================================================================================== -->
-
-
-
-<html lang="en">
-
-<head>
-    <title>UT021</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta user-scalable="yes">
-    <style>
-        body {
-            background: #ececec;
-        }
-    </style>
-</head>
-
-<body></body>
-
-</html>
-
-
-
-<!-- IBM Header by Eric !!! ======================================================================================================== -->
-
-
-
-<style>
-    .empty-header {
-        height: 30px;
-        background-color: #ececec;
-    }
-
-    .header {
-        height: 60px;
-        background-color: #ffffff;
-        border: solid 2px #ececec;
-    }
-
-    .header a:link {
-        text-decoration: none;
-    }
-
-    .header a:hover {
-        text-decoration: none;
-        background-color: #ececec;
-    }
-
-    .header-left {
-        float: left;
-        font-size: 30px;
-        font-family: "Source Han Sans CN";
-        color: #000;
-        padding-left: 10px;
-        width: 100px;
-        padding: 12px 12px;
-    }
-
-    .header-divider {
-        float: left;
-        border-left: 2px solid #e0e0e0;
-        padding-left: 1px;
-        width: 0px;
-        margin-top: 15px;
-        height: 30px;
-        margin-left: 20px;
-    }
-
-    .header-center {
-        float: left;
-        font-size: 30px;
-        font-family: "Lucida Console", "Courier New", monospace;
-        color: #000;
-        padding: 12px 12px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .header-right {
-        float: right;
-        font-size: 30px;
-        font-family: "Source Han Sans CN";
-        color: #000;
-        padding: 12px 12px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-</style>
-
-<header class="empty-header">
-
-</header>
-<nav class="header">
-    <a href="/" class="header-left">UT021</a>
-    <div class="header-divider"></div>
-    <a href="/events" class="header-center">Events</a>
-    <a href="/about" class="header-center">About</a>
-    <a href="/contact" class="header-center">Contact</a>
-
-    <a href="/" class="header-right">Login</a>
-</nav>
-
-
-
+{% include "part_page/page_style.html" %}
+{% include "part_page/header.html" %}
 
 
 
 <!-- Body (picture, big word) !!! ================================================================================================== -->
+
 
 
 <style>
@@ -198,14 +92,14 @@
             Learn -- what and how -- you can do to practise your Entrepreneurial Leadership inside UT021
         </div>
 
-        <a href="/events" class="picture-filled-background-left-link-button">
+        <a href="../events/" class="picture-filled-background-left-link-button">
             <p>Learn More &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#62; </p>
         </a>
     </div>
 
     <div class="picture-filled-background-right">
         {% load static %}
-        <img src="{% static 'utm021_logo_without_text_transparent.png' %}">
+        <img src="{% static 'img/utm021_logo_without_text_transparent.png' %}">
     </div>
 
 </nav>
@@ -337,220 +231,100 @@ window.onscroll = function() {
 
 
 
-
-<!-- Section (partner) !!! ============================================================================================================ -->
-
-
-
-<html>
-
-<head>
-    <style>
-        .sec-partners {
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 80px;
-            margin: 1em 0;
-            border-top: 2px solid #eeeeee;
-        }
-
-        .sec-partners h1 {
-            margin-top: 1em;
-        }
-
-        .sec-partners .row {
-            float: left;
-            margin: 2em 0;
-            width: 100%;
-        }
-
-        .logo-container {
-            float: left;
-            width: 16%;
-            width: 100px;
-        }
-
-        .logo-container:not(:first-child) {
-            margin-left: 7.5%;
-        }
-
-        .logo-container:first-child {
-            margin-top: .2em;
-        }
-
-        .logo-container:nth-of-type(2) img {
-            margin-top: 1.2em
-        }
-
-        .logo-container:nth-of-type(3) img {
-            margin-top: 1.8em;
-        }
-
-        .logo-container:nth-of-type(4) img {
-            margin-top: 2.35em;
-        }
-
-        .logo-container:nth-of-type(5) img {
-            margin-top: .35em;
-        }
-
-        .logo-container:last-of-type img {
-            margin-top: .65em;
-        }
-
-        .sec-partners img {
-            float: left;
-            width: 100%;
-        }
-    </style>
-</head>
-
-<body>
-    <main>
-        <div class="sec-partners">
-            <h1>Our Partners</h1>
-            <div class="row">
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" />
-                </div>
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" />
-                </div>
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
-                </div>
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" />
-                </div>
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/VTq1c9p.png" alt="Adithya Institute of Technology logo" />
-                </div>
-                <div class="logo-container">
-                    <img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" />
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-
-</html>
+<!-- Breif Events !!! ============================================================================================================ -->
 
 
 
 
 
-<!-- Footer !!! ============================================================================================================ -->
+<!-- Section (partner) !!! ======================================================================================================== -->
 
-<!-- <body>
-    <head>
-        <style>
-            .split {
-
-            }
-        </style>
-    </head>
-
-    <div class="split">
-        <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>Email</h3>
-            <a href="#">information@untitled.tld</a>
-        </div>
-        <div class="contact-method">
-            <span class="icon solid alt fa-phone"></span>
-            <h3>Phone</h3>
-            <span>(000) 000-0000 x12387</span>
-        </div>
-        <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>Address</h3>
-            <span>1234 Somewhere Road #5432<br>
-            Nashville, TN 00000<br>
-            United States of America</span>
-        </div>
-    </div>
-</body> -->
-
-
-
-<!-- 零贰壹中国企业家团队在2018年建立于多伦多大学，意为从零到壹，从无到有的创业阶段，以及探索创新的创业精神。从一个5人开始的团队开始，我们成长为了现在的在加拿大政府注册的同名非盈利组织和跨越三个校区的学生社团。在过去的四年里，我们成功组织了大量活动和项目。譬如由ProTalk项目组举办的小论坛，一个为来自不同学科和院系的多伦多大学学生举办的研讨会：Protalk小论坛以学生们探讨对不同主题的想法为出发点，在输出观点，激发想法和讨论的同时培养大家对时事的思考以及对当下市场环境的探索。该活动收到了很多来自不同行业的嘉宾们的支持和肯定。  -->
-
-
-
-
-
-
-<!-- Footer !!! ============================================================================================================ -->
 
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-    .footer {
-        display: flex;
+    .sec-partners {
         justify-content: space-between;
         align-items: center;
-        background-color: #ffffff;
         padding: 40px 80px;
+        margin: 1em 0;
+        border-top: 2px solid #eeeeee;
     }
 
-    .footer .copy {
-        color: rgb(0, 0, 0);
+    .sec-partners h1 {
+        margin-top: 1em;
     }
 
-    .bottom-links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 40px 0;
+    .sec-partners .row {
+        float: left;
+        margin: 2em 0;
+        width: 100%;
     }
 
-    .bottom-links .links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px;
+    .logo-container {
+        float: left;
+        width: 16%;
+        width: 100px;
     }
 
-    .bottom-links .links span {
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-        margin: 10px 0;
-        font-weight: bold;
+    .logo-container:not(:first-child) {
+        margin-left: 7.5%;
     }
 
-    .bottom-links .links a {
-        text-decoration: none;
-        color: gray;
-        padding: 10px 20px;
+    .logo-container:first-child {
+        margin-top: .2em;
+    }
+
+    .logo-container:nth-of-type(2) img {
+        margin-top: 1.2em
+    }
+
+    .logo-container:nth-of-type(3) img {
+        margin-top: 1.8em;
+    }
+
+    .logo-container:nth-of-type(4) img {
+        margin-top: 2.35em;
+    }
+
+    .logo-container:nth-of-type(5) img {
+        margin-top: .35em;
+    }
+
+    .logo-container:last-of-type img {
+        margin-top: .65em;
+    }
+
+    .sec-partners img {
+        float: left;
+        width: 100%;
     }
 </style>
-
-<footer class="footer">
-    <div class="copy">&copy; 2022 UM021 IT Development Team</div>
-    <div class="bottom-links">
-        <div class="links">
-            <span>Discover</span>
-            <a href="/products">Products</a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-        </div>
-        <div class="links">
-            <span>Information for...</span>
-            <a href="/events">Events</a>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-        </div>
-        <div class="links">
-            <span>Connect with us</span>
-            <a href="#">Home</a>
-            <a href="/contact">Contact</a>
-            <a href="/about">About us</a>
+<main>
+    <div class="sec-partners">
+        <h1>Our Partners</h1>
+        <div class="row">
+            <div class="logo-container">
+                <img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" />
+            </div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" />
+            </div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
+            </div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" />
+            </div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/VTq1c9p.png" alt="Adithya Institute of Technology logo" />
+            </div>
+            <div class="logo-container">
+                <img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" />
+            </div>
         </div>
     </div>
-</footer>
+</main>
+
+{% include "part_page/footer.html" %}
+
+
