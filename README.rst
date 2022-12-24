@@ -394,8 +394,30 @@ Eric's Journey: Walkthrough from Beginning to Finish SetUp
    python3 manage.py collectstatic     # may not need to do it
 
 
+Django Common Tag Syntax
+===================
+Comes from: https://docs.djangoproject.com/en/dev/topics/templates/#template-inheritance
 
-Common Problem during SetUp (Eric's Experience)
+.. code:: python
+    
+    # Tags
+    {% csrf_token %}
+    
+    {% cycle 'odd' 'even' %}
+    
+    {% if user.is_authenticated %}Hello, {{ user.username }}.{% endif %}
+    
+    # Filters
+    {{ django|title }}
+    
+    # Comment
+    {# this won't be rendered #}
+    
+    
+    
+    
+
+Common Problem (Eric's Experience)
 ===================
 .. code:: python
 
