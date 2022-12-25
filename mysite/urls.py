@@ -5,7 +5,7 @@ from django.urls import path, include
 
 
 
-from posts.views import homepage, post, allposts
+from subpages.posts.views import homepage, post, allposts
 
 
 urlpatterns = [

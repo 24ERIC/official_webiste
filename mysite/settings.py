@@ -34,9 +34,8 @@ INSTALLED_APPS = [
     'home',
     'subpages.about',
     'subpages.contact',
-    # 'subpages.posts',
+    'subpages.posts',
     'subpages.products',
-    'posts',
 ]
 
 MIDDLEWARE = [
