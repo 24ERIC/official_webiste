@@ -1,7 +1,7 @@
 .. raw:: html
     <embed>
         
-        <img src="https://github.com/24ERIC/official_website/blob/main/static/img/utm021_logo_without_text_transparent.png">
+        <img src="https://github.com/24ERIC/official_website/blob/main/static/img/utm021_logo_with_text_transparent.png">
         <br>
     </embed>
     
