@@ -10,6 +10,7 @@ urlpatterns = [
     path('contact/', include('subpages.contact.urls')),
     path('events/', include('subpages.events.urls')),
     path('products/', include('subpages.products.urls')),
+    
 ]
 
 
