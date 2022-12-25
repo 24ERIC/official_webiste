@@ -5,36 +5,74 @@
 
 <!-- Information Section !!! ============================================================================================================ -->
 
-<body>
-    <head>
-        <style>
-            .split {
 
-            }
-        </style>
-    </head>
 
-    <div class="split">
-        <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <h3>Email</h3>
-            <a href="#">information@untitled.tld</a>
-        </div>
-        <div class="contact-method">
-            <span class="icon solid alt fa-phone"></span>
-            <h3>Phone</h3>
-            <span>(000) 000-0000 x12387</span>
-        </div>
-        <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <h3>Address</h3>
-            <span>1234 Somewhere Road #5432<br>
-            Nashville, TN 00000<br>
-            United States of America</span>
-        </div>
+
+
+<style>
+    .child1 {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        color: #000;
+        width: 300px;
+        height: 500px;
+        margin-top: 75px;
+        margin-left: 100px;
+    }
+
+    .child1 p {
+        padding-left: 20%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .child1 p span {
+        font-size: 20px;
+        color: #000;
+    }
+
+    .rt-container {
+        width: 1440px;
+        height: 700px;
+    }
+
+    .club-location-goole-map {
+        width: 620px;
+        height: 500px;
+        float: right;
+        margin-top: 75px;
+        margin-right: 100px;
+    }
+</style>
+
+
+<div class="rt-container">
+    <div class="child1">
+        <p>
+            <i class="fas fa-map-marker-alt"></i> Address: <br />
+            <span> 3359 Mississauga Road <br />
+                Mississauga, ON <br />
+                L5L 1C6
+            </span>
+        </p>
+
+        <p>
+            <i class="fas fa-phone-alt"></i> Phone: <br />
+            <span> 1-(437)-6666-8888</span>
+        </p>
+
+        <p>
+            <i class=" far fa-envelope"></i> Email: <br />
+            <span>ut021@ut021.com</span>
+        </p>
     </div>
-</body>
 
+
+    <iframe class="club-location-goole-map"
+        src="https://maps.google.com/maps?q=university%20of%20toronto%20mississauga&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
 
 
 {% include "part_page/footer.html" %}
