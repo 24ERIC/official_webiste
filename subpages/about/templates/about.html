@@ -4,10 +4,133 @@
 
 
 <!-- Intro UM021 !!! ============================================================================================================ -->
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              animation: {
+                type: 'type 2.7s ease-out .8s infinite alternate both',
+              },
+              keyframes: {
+                type: {
+                  '0%': { transform: 'translateX(0ch)' },
+                  '5%, 10%': { transform: 'translateX(1ch)' },
+                  '15%, 20%': { transform: 'translateX(2ch)' },
+                  '25%, 30%': { transform: 'translateX(3ch)' },
+                  '35%, 40%': { transform: 'translateX(4ch)' },
+                  '45%, 50%': { transform: 'translateX(5ch)' },
+                  '55%, 60%': { transform: 'translateX(6ch)' },
+                  '65%, 70%': { transform: 'translateX(7ch)' },
+                  '75%, 80%': { transform: 'translateX(8ch)' },
+                  '85%, 90%': { transform: 'translateX(9ch)' },
+                  '95%, 100%': { transform: 'translateX(11ch)' },
+                },
+              },
+            }
+          }
+        }
+      </script>
+      <script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    
+    
+    
+      
+    
+    
+    
+        
+        
+        <!--Container-->
+        <div class="container w-full md:max-w-3xl mx-auto pt-20">
+            <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+                
+                
+                <!--Title-->
+                <div class="font-sans">
+                    <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                        零贰壹社团介绍</h1>
+                    <br>
+                    <br>
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="/media/utm021_logo_with_text_transparent.png" alt="content">
+                </div>
 
+    
+                <!--Post Content-->
+                <div class="py-6">
+                    <p><span style="font-weight: 400;">零贰壹中国企业家团队在2018年建立于多伦多大学，意为从零到壹，从无到有的创业阶段，以及探索创新的创业精神。从一个5人开始的团队开始，我们成长为了现在的在加拿大政府注册的同名非盈利组织和跨越三个校区的学生社团。在过去的四年里，我们成功组织了大量活动和项目。譬如由ProTalk项目组举办的小论坛，一个为来自不同学科和院系的多伦多大学学生举办的研讨会：Protalk小论坛以学生们探讨对不同主题的想法为出发点，在输出观点，激发想法和讨论的同时培养大家对时事的思考以及对当下市场环境的探索。该活动收到了很多来自不同行业的嘉宾们的支持和肯定。</span></p>
+    
+    <p>&nbsp;</p>
+    
+    <p><strong>微信公众号名称：021零贰壹</strong></p>
+    
+    <p><strong>微信公众号数据：</strong></p>
+    
+    <p><span style="font-weight: 400;">公众号关注人数：1300+</span></p>
+    
+    <p><span style="font-weight: 400;">最高阅读量：2000-3000</span></p>
+    
+    <p><span style="font-weight: 400;">最近一次线下活动推文阅读量：1200+</span></p>
+    
+    <p><span style="font-weight: 400;"><strong>现场参与人数预估: </strong>40-50人</span></p>
+                </div>
+    
+    
+                <!--/ Post Content-->
+            </div>
+        </div>
+    
+    
+        <!--/container-->
+        <script>
+    
+    
+            /* Progress bar */
+            //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+            var h = document.documentElement,
+                b = document.body,
+                st = 'scrollTop',
+                sh = 'scrollHeight',
+                progress = document.querySelector('#progress'),
+                scroll;
+            var scrollpos = window.scrollY;
+            var header = document.getElementById("header");
+            var navcontent = document.getElementById("nav-content");
+    
+            document.addEventListener('scroll', function () {
+    
+                /*Refresh scroll % width*/
+                scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+                progress.style.setProperty('--scroll', scroll + '%');
+    
+                /*Apply classes for slide in bar*/
+                scrollpos = window.scrollY;
+    
+                if (scrollpos > 10) {
+                    header.classList.add("bg-white");
+                    header.classList.add("shadow");
+                    navcontent.classList.remove("bg-gray-100");
+                    navcontent.classList.add("bg-white");
+                } else {
+                    header.classList.remove("bg-white");
+                    header.classList.remove("shadow");
+                    navcontent.classList.remove("bg-white");
+                    navcontent.classList.add("bg-gray-100");
+    
+                }
+    
+            });
+    
+    
+            //Javascript to toggle the menu
+            document.getElementById('nav-toggle').onclick = function () {
+                document.getElementById("nav-content").classList.toggle("hidden");
+            }
+        </script>
+</body>
 
-
-<!-- 零贰壹中国企业家团队在2018年建立于多伦多大学，意为从零到壹，从无到有的创业阶段，以及探索创新的创业精神。从一个5人开始的团队开始，我们成长为了现在的在加拿大政府注册的同名非盈利组织和跨越三个校区的学生社团。在过去的四年里，我们成功组织了大量活动和项目。譬如由ProTalk项目组举办的小论坛，一个为来自不同学科和院系的多伦多大学学生举办的研讨会：Protalk小论坛以学生们探讨对不同主题的想法为出发点，在输出观点，激发想法和讨论的同时培养大家对时事的思考以及对当下市场环境的探索。该活动收到了很多来自不同行业的嘉宾们的支持和肯定。  -->
 
 
 
