@@ -16,8 +16,10 @@ urlpatterns = [
     path('products/', include('subpages.products.urls')),
     path('', home, name = 'home'),
     path('post/<slug>/', post, name = 'post'),
-    path('events/', events, name = 'allposts')
+    path('events/', events, name = 'allposts'),
+    path('tinymce/', include('tinymce.urls'))
 ]
+
 
 
 
