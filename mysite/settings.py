@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'subpages.contact',
     'subpages.posts',
     'subpages.products',
+    'tinymce',
 ]
 
 MIDDLEWARE = [

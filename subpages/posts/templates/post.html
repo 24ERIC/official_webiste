@@ -2,67 +2,41 @@
 {% load markdown_extras %}
 {% block content %}
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal"> 
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+	
+	
 	<!--Container-->
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
-
 		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
-
+			
+			
 			<!--Title-->
 			<div class="font-sans">
-						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
-						{{ post.title }}</h1>
-						<p class="text-sm md:text-base font-normal text-gray-600">
-						{{ obj.timestamp}}</p>
-						<img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ post.thumbnail.url }}" alt="content">
+				<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+					{{ post.title }}</h1>
+				<p class="text-sm md:text-base font-normal text-gray-600">
+					{{ obj.timestamp}}</p>
+				<img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ post.thumbnail.url }}"
+					alt="content">
 			</div>
 
 
 			<!--Post Content-->
-
 			<div class="py-6">
-			{{ post.content | markdown | safe }}
+				{{ post.content | markdown | safe }}
 			</div>
-
-
-
-	
 
 
 			<!--/ Post Content-->
-
 		</div>
-
-		
-
-		<!--Divider-->
-		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
-
-
-
-		<!--Author可以放广告--> 
-		<div class="flex w-full items-center font-sans px-4 py-12">
-			<img class="w-10 h-10 rounded-full mr-4" src="{{ post.author.profile_picture.url }}">
-			<div class="flex-1 px-2">
-				<p class="text-base font-bold text-base md:text-xl leading-none mb-2">
-				{{ post.author }}</p>
-		
-			</div>
-			
-		</div>
-		<!--/Author-->
-
-		<!--Divider-->
-		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
-
-	
-
 	</div>
+
+
 	<!--/container-->
-
-	
-
 	<script>
+
+
 		/* Progress bar */
 		//Source: https://alligator.io/js/progress-bar-javascript-css-variables/
 		var h = document.documentElement,
@@ -75,7 +49,7 @@
 		var header = document.getElementById("header");
 		var navcontent = document.getElementById("nav-content");
 
-		document.addEventListener('scroll', function() {
+		document.addEventListener('scroll', function () {
 
 			/*Refresh scroll % width*/
 			scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
@@ -101,11 +75,11 @@
 
 
 		//Javascript to toggle the menu
-		document.getElementById('nav-toggle').onclick = function() {
+		document.getElementById('nav-toggle').onclick = function () {
 			document.getElementById("nav-content").classList.toggle("hidden");
 		}
 	</script>
+	<!-- </body> -->
 
-<!-- </body> -->
 
-{% endblock content %}
+	{% endblock content %}

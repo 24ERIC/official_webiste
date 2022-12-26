@@ -1,10 +1,8 @@
 from django.shortcuts import render
-from django.db.models import Q 
 from .models import Post
 
-def home (request):
 
-    # featured = Post.objects.filter(featured=True)
+def home (request):
     featured = Post.objects.all()[::-1][0:3]
     latest = Post.objects.order_by('-timestamp')[0:3]
     context= {
@@ -12,6 +10,7 @@ def home (request):
         'latest': latest,
     }
     return render(request, 'home.html',context)
+
 
 def post (request,slug):
     post = Post.objects.get(slug = slug)
@@ -21,10 +20,6 @@ def post (request,slug):
         'latest': latest,
     }
     return render(request, 'post.html', context)
-
-def about (request):
-    return render(request, 'about_page.html')
-
 
 
 def events(request):
