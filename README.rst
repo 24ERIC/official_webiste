@@ -501,6 +501,14 @@ Future Planning
 
 
 
+
+Important links
+===================
+https://www.021dna.ca/
+https://github.com/021group/021chinese-group.github.io
+https://chinese-network.org/index.html
+
+
 Licence
 ===================
  Copyright © 2022, `IT Development Team in UT021 <https://github.com/24ERIC/official_website/>`_ Released under the [MIT License](LICENSE).
